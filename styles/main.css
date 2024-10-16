@@ -1,0 +1,232 @@
+/* desktop */
+    @media (min-width: 720px){
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        /* class selectors */
+            .container {
+                margin: auto;
+                max-width: 1200px;
+                min-width: 600px;
+            }
+            .section {
+                /*flex: 1 1 auto;*/
+                padding: 0 10px 10px 0;
+            }
+            .left-float {
+                float:left;
+                padding:0 10px 10px 0;
+            }
+            .sidebar {
+                flex: 0 1 200px;
+                padding: 20px 40px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                margin-top: 70px;
+            }
+            .submitContainer {
+                justify-content: flex-end;
+            }
+            .burger {
+                display: none;
+            }
+            
+        /* ID selectors */
+            #logo {
+                padding: 10px;
+            }
+
+        /* overall */
+
+            /* form */
+                form {
+                    width: 50%;
+                    margin: auto;
+                }
+                form > div {
+                    margin: 15px 0;
+                    display: flex;
+                }
+
+            /* header */
+                header {
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                header h1 a:hover {
+                    text-decoration: underline;
+                }
+                h1, h2 {
+                    font-family: "Raleway", sans-serif;
+                }
+
+            /* nav */
+                nav {
+                    overflow: auto; 
+                }
+                nav li a:hover {
+                    color: #7e8aa2;
+                }
+                nav ul {
+                    padding-left: 0;
+                    flex-direction: row;
+                }
+                nav ul li {
+                    display: inline;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border: none;
+                    border-left: 1px solid #7e8aa2;
+                }
+                nav li:first-child {
+                    border-left: none;
+                }
+
+            /* main */
+                main{
+                    display: flex;
+                    gap: 10px;
+                }
+
+            /* table */
+                table {
+                    width: 100%;
+                    max-width: 600px;
+                    min-width: 300px;
+                }
+
+            /* label */
+                label {
+                    display: inline-block;
+                    width: 120px;
+                }
+
+            /* input */
+                input[type="submit"] {
+                    width: auto;
+                    margin: 0;
+                }
+
+            th, td {
+                padding: 10px 4px;
+                text-align: left;
+            }
+            th {
+                text-transform: uppercase;
+                border-bottom: 4px solid #000;
+                background-color: #fff;
+            }
+            tr:nth-child(odd) {
+                background-color: #ccc;
+            }
+        /* Form Styling Needs Adding */
+    }
+
+
+
+/* mobile */
+    /* class selectors */
+        .container {
+            width: 100%;
+        }
+        .resize-img{
+            width: 100%;
+            height: auto;
+        }
+        .burger > .line{
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+        }
+
+    /* ID selectors */
+        #logo {
+            text-align: center;
+            display:flex;
+            justify-content: space-between;
+            padding:5px;
+        }
+
+    /* overall */
+        body {
+            font-family: helvetica, arial, sans-serif;
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* form */
+            form > div {
+                margin: 15px 0;
+            }
+
+        /* footer */
+            footer {
+                border-top: 1px solid #ccc;
+                margin: 20px 10px 10px 0;
+                font-size: 0.8em;
+                text-align: center;
+                font-style: italic;
+            }
+            main, footer {
+                padding: 0 15px;
+            }
+
+        /* header */
+            header {
+                background-color: #263248;
+            }
+            header h1 {
+                margin: 0;
+            }
+            header h1 a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+        /* nav */
+            nav{
+                overflow: hidden;
+                transition: height 0.5s;
+            }
+            nav ul {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            nav ul li {
+                border-bottom: 1px solid #ccc;
+                padding: 5px;
+            }
+            nav ul li a {
+                display: inline-block;
+                width: 100%;
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
+                padding: 8px 0;
+            }
+
+        /* label */
+            label {
+                display: block;
+            }
+
+        /* input */
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            }
+            input[type="submit"] {
+                margin: 10px auto;
+                text-align: center;
+                width: 100%;
+                padding: 15px;
+            }
